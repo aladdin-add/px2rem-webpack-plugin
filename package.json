@@ -4,7 +4,9 @@
   "description": "make page to auto-fit responsive screen",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -32,12 +34,14 @@
   "dependencies": {
     "css": "^2.2.1",
     "lodash": "^4.8.2",
-    "babel-runtime": "^6.6.1"
+    "babel-runtime": "^6.6.1",
+    "snyk": "^1.189.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/xinchaobeta/px2rem-webpack-plugin.git"
   },
   "bugs": "https://github.com/xinchaobeta/px2rem-webpack-plugin/issues",
-  "homepage": "https://github.com/xinchaobeta/px2rem-webpack-plugin"
+  "homepage": "https://github.com/xinchaobeta/px2rem-webpack-plugin",
+  "snyk": true
 }
